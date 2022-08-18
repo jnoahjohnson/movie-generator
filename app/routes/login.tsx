@@ -55,29 +55,31 @@ export default function Login() {
   const { error } = useLoaderData();
 
   return (
-    <div className="max-w-xl mt-8 shadow-lg mx-auto">
-      {error ? <div className="error">{error}</div> : null}
-      <Form method="post" className="p-6">
-        <div>
-          <h1 className="text-4xl font-bold mb-4">Please Sign In</h1>
-        </div>
+    <div className="px-4">
+      <div className="max-w-xl mt-8 shadow-lg mx-auto">
+        {error ? <div className="error">{error}</div> : null}
+        <Form method="post" className="p-6">
+          <div>
+            <h1 className="text-4xl font-bold mb-4">Please Sign In</h1>
+          </div>
 
-        <div className="mb-2">
-          <input
-            type="password"
-            name="password"
-            placeholder="password"
-            className="p-2 text-lg bg-slate-100"
-          />
-        </div>
+          <div className="mb-2">
+            <input
+              type="password"
+              name="password"
+              placeholder="password"
+              className="p-2 text-lg bg-slate-100"
+            />
+          </div>
 
-        <button
-          type="submit"
-          className="border-solid border-2 border-black py-1 px-2 text-lg"
-        >
-          Sign in
-        </button>
-      </Form>
+          <button
+            type="submit"
+            className="border-solid border-2 border-black py-1 px-2 text-lg"
+          >
+            Sign in
+          </button>
+        </Form>
+      </div>
     </div>
   );
 }

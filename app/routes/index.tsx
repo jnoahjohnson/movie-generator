@@ -82,7 +82,7 @@ export default function Index() {
   }, [transition]);
 
   return (
-    <div className="pt-6 text-center">
+    <div className="pt-6 text-center px-4">
       <div className="mx-auto max-w-xl text-left">
         <h1 className="text-6xl mb-4 font-bold italic">Movie Generator</h1>
         <h2 className="text-3xl mb-4 font-light">Romantic Card Edition</h2>
